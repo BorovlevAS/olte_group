@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_biko_brand_purchased,biko.brand.purchased user,model_biko_brand_purchased,base.group_user,1,1,1,0
+access_biko_deal_type,biko.deal.type user,model_biko_deal_type,base.group_user,1,1,1,0
+access_biko_traffic_source,biko.traffic.source user,model_biko_traffic_source,base.group_user,1,1,1,0
+access_biko_brand,biko.brand user,model_biko_brand,base.group_user,1,1,1,0
+access_biko_budget,biko.budget user,model_biko_budget,base.group_user,1,1,1,0
+access_biko_payment_type,biko.payment.type user,model_biko_payment_type,base.group_user,1,1,1,0

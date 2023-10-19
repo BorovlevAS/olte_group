@@ -1,0 +1,366 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* biko_add_field
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-10-19 14:27+0000\n"
+"PO-Revision-Date: 2023-10-19 14:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_agent_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__biko_agent_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_users__biko_agent_ids
+msgid "Agent"
+msgstr "Агент"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_amount_emploees
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__biko_amount_emploees
+#: model:ir.model.fields,field_description:biko_add_field.field_res_users__biko_amount_emploees
+msgid "Amount emploees"
+msgstr "К-сть робітників"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_auction_date
+msgid "Auction date"
+msgstr "Дата аукциону"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "Basic information"
+msgstr "Основна інформація"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_brand_tree
+#: model:ir.model,name:biko_add_field.model_biko_brand
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_brand_ids
+#: model:ir.ui.menu,name:biko_add_field.biko_brand_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_brand_tree
+msgid "Brand/analogue"
+msgstr "Бренд/аналог"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_brand_purchased_tree
+#: model:ir.model,name:biko_add_field.model_biko_brand_purchased
+#: model:ir.ui.menu,name:biko_add_field.biko_brand_purchased_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_brand_purchased_tree
+msgid "Brands purchased"
+msgstr "Які бренди закуповують?"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_budget_tree
+#: model:ir.model,name:biko_add_field.model_biko_budget
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_budget_id
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__biko_budget_id
+#: model:ir.model.fields,field_description:biko_add_field.field_res_users__biko_budget_id
+#: model:ir.ui.menu,name:biko_add_field.biko_budget_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_budget_tree
+msgid "Budget"
+msgstr "Бюджет"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "CRM-control"
+msgstr "CRM-контроль"
+
+#. module: biko_add_field
+#: model:ir.model,name:biko_add_field.model_res_partner
+msgid "Contact"
+msgstr "Контакт"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "Coordination"
+msgstr "Погодження"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__create_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__create_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__create_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__create_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__create_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__create_uid
+msgid "Created by"
+msgstr "Created by"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__create_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__create_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__create_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__create_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__create_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__create_date
+msgid "Created on"
+msgstr "Created on"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__execution_to_date
+msgid "Deadline until"
+msgstr "Термін виконання до"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_deliveries_date
+msgid "Delivery date"
+msgstr "Дата поставки"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__display_name
+#: model:ir.model.fields,field_description:biko_add_field.field_sale_order__display_name
+msgid "Display Name"
+msgstr "Display Name"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_feedback
+msgid "Feedback"
+msgstr "Зворотній зв'язок "
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_financial_director
+msgid "Financial director"
+msgstr "Фінансовий директор"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_requirement
+msgid "For what need have you gone wild?"
+msgstr "З якою потребою звернувся?"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_head
+msgid "Head"
+msgstr "Керівник"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__id
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__id
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__id
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__id
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__id
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__id
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__id
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__id
+#: model:ir.model.fields,field_description:biko_add_field.field_sale_order__id
+msgid "ID"
+msgstr "ID"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner____last_update
+#: model:ir.model.fields,field_description:biko_add_field.field_sale_order____last_update
+msgid "Last Modified on"
+msgstr "Last Modified on"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__write_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__write_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__write_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__write_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__write_uid
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__write_uid
+msgid "Last Updated by"
+msgstr "Last Updated by"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__write_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__write_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__write_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__write_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__write_date
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__write_date
+msgid "Last Updated on"
+msgstr "Last Updated on"
+
+#. module: biko_add_field
+#: model:ir.model,name:biko_add_field.model_crm_lead
+msgid "Lead/Opportunity"
+msgstr "Лід/Нагода"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_checklist_link
+msgid "Link to the checklist from the client's words"
+msgstr "Посилання на чек-лист з слів клієнта"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_link_tender
+msgid "Link to the tender/documentation"
+msgstr "Посилання на тендер/документацію"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_manage_director
+msgid "Manage director"
+msgstr "Керуючий директор"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand__name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_brand_purchased__name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_budget__name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_deal_type__name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_payment_type__name
+#: model:ir.model.fields,field_description:biko_add_field.field_biko_traffic_source__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "Payment"
+msgstr "Оплата"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_payment_type_tree
+#: model:ir.model,name:biko_add_field.model_biko_payment_type
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_payment_type_id
+#: model:ir.model.fields,field_description:biko_add_field.field_sale_order__biko_payment_type_id
+#: model:ir.ui.menu,name:biko_add_field.biko_payment_type_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_payment_type_tree
+msgid "Payment type"
+msgstr "Тип оплати"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_percentage_prepayment
+#: model:ir.model.fields,field_description:biko_add_field.field_sale_order__biko_percentage_prepayment
+msgid "Percentage of partial prepayment"
+msgstr "Відсоток часткової передоплати"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_rop
+msgid "ROP"
+msgstr "РОП"
+
+#. module: biko_add_field
+#: model:ir.model,name:biko_add_field.model_sale_order
+msgid "Sales Order"
+msgstr "Замовлення на продаж"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_submission_deadline
+msgid "Submission deadline"
+msgstr "Дедлайн подачі"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_resume
+msgid "Summary of this agreement"
+msgstr "Резюме по даній угоді"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "Tender"
+msgstr "Тендер"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_tender_offer_number
+msgid "Tender offer number"
+msgstr "Номер тендерної пропозиції"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_execution_of_date
+msgid "The term of execution of"
+msgstr "Термін виконання з"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_traffic_source_tree
+#: model:ir.model,name:biko_add_field.model_biko_traffic_source
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_traffic_source_id
+#: model:ir.ui.menu,name:biko_add_field.biko_traffic_source_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_traffic_source_tree
+msgid "Traffic source"
+msgstr "Джерело трафіку"
+
+#. module: biko_add_field
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_crm_lead_view_form_inherit1
+msgid "Training/Services"
+msgstr "Навчання/Послуги"
+
+#. module: biko_add_field
+#: model:ir.actions.act_window,name:biko_add_field.action_biko_deal_type_tree
+#: model:ir.model,name:biko_add_field.model_biko_deal_type
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_deal_type_id
+#: model:ir.ui.menu,name:biko_add_field.biko_deal_type_menu
+#: model_terms:ir.ui.view,arch_db:biko_add_field.biko_deal_type_tree
+msgid "Type of deal"
+msgstr "Тип угоди"
+
+#. module: biko_add_field
+#: model:ir.ui.menu,name:biko_add_field.biko_user_field_menu
+msgid "User's fields"
+msgstr "Поля користувача"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_brand_purchased_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__biko_brand_purchased_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_users__biko_brand_purchased_ids
+msgid "What brands do you buy?"
+msgstr "Які бренди закуповують?"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_best_result
+msgid "What is the best outcome for you"
+msgstr "Що для вас є найкращим результатом"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_interested_in
+msgid "What kind of in-service training are you interested in?"
+msgstr "Яке саме навчання-послуга вас цікавить?"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_work_before_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_partner__biko_work_before_ids
+#: model:ir.model.fields,field_description:biko_add_field.field_res_users__biko_work_before_ids
+msgid "Who did you work with before?"
+msgstr "З ким раніше працювали?"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_who_find_tender
+msgid "Who found the tender"
+msgstr "Хто знайшов тендер"
+
+#. module: biko_add_field
+#: model:ir.model.fields,field_description:biko_add_field.field_crm_lead__biko_who_get_percentage_ids
+msgid "Who get %?"
+msgstr "Хто ортимує %"
+
+#. module: biko_add_field
+#: code:addons/biko_add_field/models/crm_lead.py:0
+#, python-format
+msgid ""
+"By saving this change, the customer's fields:{msg} will also be updated."
+msgstr ""
+"При збереженні цієї зміни поля клієнта: {msg} також будуть оновлені."
+
+#. module: biko_add_field
+#: code:addons/biko_add_field/models/crm_lead.py:0
+#, python-format
+msgid "In order to create sale order, Customer field should not be empty!"
+msgstr "Для створення замовлення на продаж поле «Клієнт» не повинно бути порожнім!"
+
+#. module: biko_add_field
+#: code:addons/biko_add_field/models/crm_lead.py:0
+#, python-format
+msgid "By saving this change, the customer's fields: "
+msgstr "При збереженні цієї зміни поля клієнта: "
+
+#. module: biko_add_field
+#: code:addons/biko_add_field/models/crm_lead.py:0
+#, python-format
+msgid "will also be updated."
+msgstr "також будуть оновлені."
