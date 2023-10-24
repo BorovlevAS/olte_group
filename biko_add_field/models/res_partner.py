@@ -7,18 +7,18 @@ class ResPartner(models.Model):
     _inherit = "res.partner"
 
     biko_brand_purchased_ids = fields.Many2many(
-        "biko.brand.purchased",
-        "biko_brand_purchased_res_partner_rel",
-        "res_partner_id",
-        "biko_brands_purchased_id",
+        comodel_name="biko.brand.purchased",
+        relation="biko_brand_purchased_res_partner_rel",
+        column1="res_partner_id",
+        column2="biko_brands_purchased_id",
         string="What brands do you buy?",
     )
 
     biko_work_before_ids = fields.Many2many(
-        "res.partner",
-        "biko_work_before_res_partner_rel",
-        "res_partner_id",
-        "biko_work_before_id",
+        comodel_name="res.partner",
+        relation="biko_work_before_res_partner_rel",
+        column1="res_partner_id",
+        column2="biko_work_before_id",
         string="Who did you work with before?",
     )
 
@@ -30,9 +30,9 @@ class ResPartner(models.Model):
     )
 
     biko_agent_ids = fields.Many2many(
-        "res.partner",
-        "biko_agent_res_partner_rel",
-        "res_partner_id",
-        "biko_agent_id",
+        comodel_name="res.partner",
+        relation="biko_agent_res_partner_rel",
+        column1="res_partner_id",
+        column2="biko_agent_id",
         string="Agent",
     )

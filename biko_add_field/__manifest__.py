@@ -6,6 +6,7 @@
     "depends": [
         "crm",
         "sale",
+        "hr",
         "crm_opportunity_product",
     ],
     "data": [

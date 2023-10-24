@@ -6,10 +6,10 @@ class CrmLead(models.Model):
     _inherit = "crm.lead"
 
     biko_brand_purchased_ids = fields.Many2many(
-        "biko.brand.purchased",
-        "biko_brand_purchased_rel",
-        "lead_id",
-        "biko_brands_purchased_id",
+        comodel_name="biko.brand.purchased",
+        relation="biko_brand_purchased_rel",
+        column1="lead_id",
+        column2="biko_brands_purchased_id",
         # compute="_compute_biko_brand_purchased_ids",
         # inverse="_inverse_biko_brand_purchased_ids",
         # store=True,
@@ -22,10 +22,10 @@ class CrmLead(models.Model):
     )
 
     biko_work_before_ids = fields.Many2many(
-        "res.partner",
-        "biko_work_before_rel",
-        "lead_id",
-        "biko_work_before_id",
+        comodel_name="res.partner",
+        relation="biko_work_before_rel",
+        column1="lead_id",
+        column2="biko_work_before_id",
         compute="_compute_biko_work_before_ids",
         inverse="_inverse_biko_work_before_ids",
         store=True,
@@ -45,10 +45,10 @@ class CrmLead(models.Model):
     )
 
     biko_who_get_percentage_ids = fields.Many2many(
-        "hr.employee",
-        "biko_who_get_rel",
-        "lead_id",
-        "biko_who_get_percentage_id",
+        comodel_name="hr.employee",
+        relation="biko_who_get_rel",
+        column1="lead_id",
+        column2="biko_who_get_percentage_id",
         string="Who get %?",
     )
 
@@ -57,10 +57,10 @@ class CrmLead(models.Model):
     biko_feedback = fields.Char("Feedback")
 
     biko_brand_ids = fields.Many2many(
-        "biko.brand",
-        "biko_brand_rel",
-        "lead_id",
-        "biko_brands_id",
+        comodel_name="biko.brand",
+        relation="biko_brand_rel",
+        column1="lead_id",
+        column2="biko_brands_id",
         string="Brand/analogue",
     )
 
@@ -73,10 +73,10 @@ class CrmLead(models.Model):
     )
 
     biko_agent_ids = fields.Many2many(
-        "res.partner",
-        "biko_agent_rel",
-        "lead_id",
-        "biko_agent_id",
+        comodel_name="res.partner",
+        relation="biko_agent_rel",
+        column1="lead_id",
+        column2="biko_agent_id",
         string="Agent",
         # compute="_compute_biko_agent_ids",
         # inverse="_inverse_biko_agent_ids",
