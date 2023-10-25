@@ -1,0 +1,69 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- CRM Lead & Opportunity Form View  -->
+    <record id="biko_crm_lead_view_form_inherit1" model="ir.ui.view">
+        <field name="name">BIKO: add field</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='lead_partner']/parent::group" position="inside">
+                <group name="biko_add_fields">
+                    <field name="biko_brand_purchased_ids" widget="many2many_tags" />
+                    <field name="biko_deal_type_id" />
+                    <field name="biko_work_before_ids" widget="many2many_tags" />
+                    <field name="biko_amount_emploees" attrs="{'invisible': [('type','!=','lead')]}" />
+                    <field name="biko_traffic_source_id" />
+                    <field
+                        name="biko_who_get_percentage_ids"
+                        widget="many2many_tags"
+                        attrs="{'invisible': [('type','=','lead')]}"
+                    />
+                    <field name="biko_requirement" />
+                    <field name="biko_feedback" attrs="{'invisible': [('type','=','lead')]}" />
+                    <field name="biko_brand_ids" widget="many2many_tags" />
+                    <field name="biko_budget_id" />
+                    <field
+                        name="biko_agent_ids"
+                        widget="many2many_tags"
+                        attrs="{'invisible': [('type','=','lead')]}"
+                    />
+                </group>
+            </xpath>
+
+            <xpath expr="//notebook/page[1]" position="after">
+                <page name="biko_tender" string="Tender" attrs="{'invisible': [('type','=','lead')]}">
+                    <group name="biko_tender" string="Tender">
+                        <field name="biko_link_tender" />
+                        <field name="biko_tender_offer_number" />
+                        <field name="biko_submission_deadline" />
+                        <field name="biko_auction_date" />
+                        <field name="biko_deliveries_date" />
+                        <field name="biko_resume" />
+                        <field name="biko_who_find_tender" />
+                    </group>
+                </page>
+                <page name="biko_basic" string="Basic information">
+                    <group name="biko_payment" string="Payment" attrs="{'invisible': [('type','=','lead')]}">
+                        <field name="biko_payment_type_id" />
+                        <field name="biko_percentage_prepayment" />
+                    </group>
+                    <group name="biko_services" string="Training/Services">
+                        <field name="biko_interested_in" />
+                        <field name="biko_best_result" />
+                        <field name="biko_execution_of_date" attrs="{'invisible': [('type','=','lead')]}" />
+                        <field name="biko_execution_to_date" attrs="{'invisible': [('type','=','lead')]}" />
+                        <field name="biko_checklist_link" attrs="{'invisible': [('type','=','lead')]}" />
+                    </group>
+                </page>
+                <page name="biko_crm" string="CRM-control" attrs="{'invisible': [('type','=','lead')]}">
+                    <group name="biko_coordination" string="Coordination">
+                        <field name="biko_head" />
+                        <field name="biko_rop" />
+                        <field name="biko_financial_director" />
+                        <field name="biko_manage_director" />
+                    </group>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>

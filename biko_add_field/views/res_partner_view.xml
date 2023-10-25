@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<odoo>
+    <!-- CRM Lead & Opportunity Form View  -->
+    view_partner_form
+    <record id="biko_view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">BIKO: add field</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='vat']" position="after">
+                <group name="biko_add_field">
+                    <field name="biko_brand_purchased_ids" widget="many2many_tags" />
+                    <field name="biko_work_before_ids" widget="many2many_tags" />
+                    <field name="biko_amount_emploees" />
+                    <field name="biko_budget_id" />
+                    <field name="biko_agent_ids" widget="many2many_tags" />
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>
