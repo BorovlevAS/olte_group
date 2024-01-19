@@ -1,17 +1,23 @@
 <odoo>
     <data>
         <record id="view_order_form" model="ir.ui.view">
-        <field name="name">olte_saleorder_customization_view_order_form</field>
-        <field name="model">sale.order</field>
-        <field name="inherit_id" ref="sale.view_order_form"/>
-        <field name="arch" type="xml">
-            <data>
-                <xpath expr="//field[@name='order_line']//tree//field[@name='sequence']" position="after">
-                    <field name="product_image" widget="image" readonly="1" nolabel="1" class="o_image_24_cover" optional="show"/>
-                </xpath>
-            </data>
-        </field>
+            <field name="name">olte_saleorder_customization_view_order_form</field>
+            <field name="model">sale.order</field>
+            <field name="inherit_id" ref="sale.view_order_form" />
+            <field name="arch" type="xml">
+                <data>
+                    <xpath expr="//field[@name='order_line']//tree//field[@name='sequence']" position="after">
+                        <field
+                            name="product_image"
+                            widget="image"
+                            readonly="1"
+                            nolabel="1"
+                            class="o_image_24_cover"
+                            optional="show"
+                        />
+                    </xpath>
+                </data>
+            </field>
         </record>
     </data>
 </odoo>
-
