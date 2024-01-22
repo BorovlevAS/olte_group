@@ -20,7 +20,7 @@
     </record>
 
     <record id="action_view_set_reservation_days" model="ir.actions.act_window">
-        <field name="name">Create invoices</field>
+        <field name="name">Set reservation days</field>
         <field name="type">ir.actions.act_window</field>
         <field name="res_model">set.reservation.days</field>
         <field name="view_mode">form</field>
