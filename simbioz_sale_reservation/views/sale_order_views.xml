@@ -14,11 +14,11 @@
 
             <xpath expr="//button[@name='action_confirm']" position="after">
                 <button
-                    name="action_reserve"
+                    name="%(simbioz_sale_reservation.action_view_set_reservation_days)d"
                     id="action_reserve"
                     string="In reserve"
                     class="btn-primary"
-                    type="object"
+                    type="action"
                     attrs="{'invisible': [('state', 'not in', ['draft'])]}"
                 />
             </xpath>
