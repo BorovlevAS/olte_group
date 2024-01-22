@@ -7,7 +7,9 @@
     "company": "Simbioz Holding",
     "depends": ["odoo_stock_reservation"],
     "data": [
+        "wizards/set_reservation_days.xml",
         "views/sale_order_views.xml",
+        "security/ir.model.access.csv",
     ],
     "demo": [],
     "installable": True,

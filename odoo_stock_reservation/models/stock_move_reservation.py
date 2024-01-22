@@ -46,12 +46,15 @@ class StockMovereservation(models.Model):
         readonly=True,
     )
 
+    reserv_due_date = fields.Datetime(
+        string="Reserved due",
+        copy=False,
+    )
+
     @api.model
     def create(self, vals):
         if vals.get("reserv_code", _("New")) == _("New"):
-            vals["reserv_code"] = self.env["ir.sequence"].next_by_code(
-                "stock.move.reservation"
-            ) or _("New")
+            vals["reserv_code"] = self.env["ir.sequence"].next_by_code("stock.move.reservation") or _("New")
         return super().create(vals)
 
 
