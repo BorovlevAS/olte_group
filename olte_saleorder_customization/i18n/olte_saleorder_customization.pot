@@ -55,6 +55,11 @@ msgid "Last Modified on"
 msgstr ""
 
 #. module: olte_saleorder_customization
+#: model:ir.model.fields,field_description:olte_saleorder_customization.field_sale_order_line__product_image
+msgid "Product Image"
+msgstr ""
+
+#. module: olte_saleorder_customization
 #: model:ir.model,name:olte_saleorder_customization.model_purchase_request
 #: model:ir.model.fields,field_description:olte_saleorder_customization.field_sale_order__purchase_request_id
 msgid "Purchase Request"
@@ -73,4 +78,9 @@ msgstr ""
 #. module: olte_saleorder_customization
 #: model:ir.model,name:olte_saleorder_customization.model_sale_order
 msgid "Sales Order"
+msgstr ""
+
+#. module: olte_saleorder_customization
+#: model:ir.model,name:olte_saleorder_customization.model_sale_order_line
+msgid "Sales Order Line"
 msgstr ""
