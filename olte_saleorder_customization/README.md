@@ -1,6 +1,8 @@
-# <olte_saleorder_customization>
+# olte_saleorder_customization
 
-<Вивід фото товару в форму КП/Замовлення>
+Додана кнопка в sale.order для створення purchase.request. Додана кнопка в sale.order для переходу в tree view всіх
+purchase.request зроблених від sale. Додана кнопка в purchase.request для переходу в sale.order від якого був зроблений
+purchase.
 
 ## ВАЖНО
 
