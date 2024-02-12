@@ -79,3 +79,8 @@ msgstr "Замовлення на продаж"
 #: model:ir.model,name:olte_saleorder_customization.model_sale_order
 msgid "Sales Order"
 msgstr "Замовлення на продаж"
+
+#. module: olte_saleorder_customization
+#: model:ir.model,name:olte_saleorder_customization.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Рядок замовлення на продаж"
