@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="set_reservation_days_view_form" model="ir.ui.view">
+        <field name="name">set.reservation.days.view.form</field>
+        <field name="model">set.reservation.days</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="order_id" invisible="1" />
+                        <field name="number_of_days" />
+                    </group>
+                    <footer>
+                        <button name="action_set_reserve" string="Reserve" type="object" class="btn-primary" />
+                        <button string="Cancel" class="btn-secondary" special="cancel" />
+                    </footer>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_set_reservation_days" model="ir.actions.act_window">
+        <field name="name">Set reservation days</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">set.reservation.days</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="context">{'default_order_id': active_id}</field>
+        <field name="binding_model_id" ref="sale.model_sale_order" />
+        <field name="binding_view_types">list</field>
+    </record>
+</odoo>
