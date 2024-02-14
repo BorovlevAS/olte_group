@@ -1,0 +1,167 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* olte_so_commercial_report
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-02-14 15:12+0000\n"
+"PO-Revision-Date: 2024-02-14 15:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: olte_so_commercial_report
+#: model:ir.actions.report,print_report_name:olte_so_commercial_report.action_report_printed_fields
+msgid "'Commercial offer (OLTE) - %s' % (object.name)"
+msgstr "'Комерційна пропозиція (OLTE) - %s' % (object.name)"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__code
+msgid "Code"
+msgstr "Код"
+
+#. module: olte_so_commercial_report
+#: model:ir.actions.report,name:olte_so_commercial_report.action_report_printed_fields
+msgid "Commercial offer (OLTE)"
+msgstr "Комерційна пропозиція (OLTE)"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_template__model_description
+msgid "Description"
+msgstr "Опис"
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Director and Co-founder OL&amp;TE Group LLC"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_product__display_name
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_template__display_name
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__display_name
+msgid "Display Name"
+msgstr "Відображувана назва"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_product__id
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_template__id
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__id
+msgid "ID"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_product____last_update
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_template____last_update
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection____last_update
+msgid "Last Modified on"
+msgstr "Останні зміни на"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_product__model_description
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.view_product_product_form
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.view_product_template_form
+msgid "Model description"
+msgstr "Опис моделі"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__name
+msgid "Name"
+msgstr "Назва"
+
+#. module: olte_so_commercial_report
+#: model:ir.model,name:olte_so_commercial_report.model_product_product
+msgid "Product"
+msgstr "Продукт"
+
+#. module: olte_so_commercial_report
+#: model:ir.model,name:olte_so_commercial_report.model_product_template
+msgid "Product Template"
+msgstr "Шаблон продукту"
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_standard_protection__record_number
+msgid "Record number"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.actions.act_window,name:olte_so_commercial_report.action_standard_protection
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_product__standard_protection
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_product_template__standard_protection
+#: model:ir.ui.menu,name:olte_so_commercial_report.menu_standard_protection
+msgid "Standard for protection"
+msgstr "Стандарт захисту"
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Tel/Viber/WhatsApp: +380503051276"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Telegram: @mzrln"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model,name:olte_so_commercial_report.model_standard_protection
+msgid "standard.protection"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "З повагою, Олена Мазура"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "КОМЕРЦІЙНА ПРОПОЗИЦІЯ"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Назва моделі, стандарти захисту"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Опис моделі"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Фото, кольори"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Ціна з ПДВ"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "№ пп"
+msgstr ""

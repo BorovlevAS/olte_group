@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <template id="report_printed_fields">
+        <t t-call="web.html_container">
+            <t t-set="data_report_margin_top" t-value="1" />
+            <t t-foreach="docs" t-as="o">
+                <t t-call="web.basic_layout">
+                    <div class="page">
+                        <div>
+                            <img
+                                src="olte_so_commercial_report/static/src/img/report_header.jpg"
+                                style="max-width: 100%;height: auto;"
+                            />
+                        </div>
+                        <br />
+                        <div style="text-align: center;">
+                            <p style="font-weight: bold;font-size: 14px;">КОМЕРЦІЙНА ПРОПОЗИЦІЯ</p>
+                        </div>
+                        <style>
+                            .table th {
+                            font-weight: normal;
+                            font-size: 14px;
+                            }
+                            .table td {
+                            font-size: 14px;
+                            }
+                        </style>
+                        <table class="table table-bordered">
+                            <thead>
+                                <th style="width: 5%" class="text-center">№ пп</th>
+                                <th style="width: 20%" class="text-center">Назва моделі, стандарти захисту</th>
+                                <th class="text-center">Опис моделі</th>
+                                <th style="width: 15%" class="text-center">Фото, кольори</th>
+                                <th style="width: 15%" class="text-center">Ціна з ПДВ</th>
+                            </thead>
+                            <tbody>
+                                <t t-set="product_number" t-value="1" />
+                                <t t-foreach="o.order_line" t-as="order_line">
+                                    <tr>
+                                        <th>
+                                            <t t-esc="product_number" />
+                                            <t t-set="product_number" t-value="product_number + 1" />
+                                        </th>
+                                        <td>
+                                            <span t-field="order_line.product_id.name" />
+                                            <br />
+                                            <br />
+                                            <span t-field="order_line.product_id.standard_protection.name" />
+                                            <span t-field="order_line.product_id.standard_protection.code" />
+                                        </td>
+                                        <td>
+                                            <span t-field="order_line.product_id.product_tmpl_id.model_description" />
+                                        </td>
+                                        <td>
+                                            <img
+                                                t-att-src="image_data_uri(order_line.product_id.product_tmpl_id.image_1920)"
+                                                class="img-thumbnail"
+                                                width="150"
+                                            />
+
+                                            <ul class="list-inline">
+                                                <t
+                                                    t-foreach="order_line.product_id.product_template_attribute_value_ids"
+                                                    t-as="attribute"
+                                                >
+                                                    <t t-if="attribute.attribute_id.name == 'Колір'">
+                                                        <li class="list-inline-item">
+                                                            <span class="badge badge-light border text-body">
+                                                                <t t-esc="attribute.name" />
+                                                            </span>
+                                                        </li>
+                                                    </t>
+                                                </t>
+                                            </ul>
+                                        </td>
+                                        <td>
+                                            <p t-field="order_line.price_unit" class="text-center" />
+                                        </td>
+                                    </tr>
+                                </t>
+                            </tbody>
+                        </table>
+                        <div>
+                            <p>З повагою, Олена Мазура</p>
+
+                            <ol style="list-style: none;">
+                                <li>Director and Co-founder OL&amp;TE Group LLC</li>
+                                <li>Tel/Viber/WhatsApp: +380503051276</li>
+                                <li>Telegram: @mzrln</li>
+                            </ol>
+                        </div>
+                    </div>
+                </t>
+            </t>
+        </t>
+    </template>
+</odoo>
