@@ -3,7 +3,14 @@
     "version": "14.0.1.0.0",
     "author": "Yevdokimova A.Y.",
     "company": "BIKO Solutions",
-    "depends": ["sales_team", "sale", "product", "stock", "web"],
+    "depends": [
+        "sales_team",
+        "sale",
+        "product",
+        "stock",
+        "web",
+        "res_partner_telegram",
+    ],
     "data": [
         "security/ir.model.access.csv",
         "data/sequence.xml",
@@ -11,7 +18,6 @@
         "views/product_template.xml",
         "views/product_product.xml",
         "views/sale_order.xml",
-        "views/res_partner.xml",
         "reports/report.xml",
         "reports/report_printed_fields.xml",
     ],

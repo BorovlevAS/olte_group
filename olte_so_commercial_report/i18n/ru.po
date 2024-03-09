@@ -127,17 +127,6 @@ msgid "Tel/Viber/WhatsApp: +380503051276"
 msgstr ""
 
 #. module: olte_so_commercial_report
-#: model:ir.model.fields,field_description:olte_so_commercial_report.field_res_partner__telegram
-#: model:ir.model.fields,field_description:olte_so_commercial_report.field_res_users__telegram
-msgid "Telegram"
-msgstr ""
-
-#. module: olte_so_commercial_report
-#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
-msgid "Telegram: @"
-msgstr ""
-
-#. module: olte_so_commercial_report
 #: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
 msgid "Telegram: @mzrln"
 msgstr ""

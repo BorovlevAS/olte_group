@@ -106,7 +106,8 @@
                                 </t>
                                 <t t-if="o.user_id.partner_id.telegram">
                                     <li>
-                                        Telegram: @
+                                        Telegram:
+                                        @
                                         <t t-esc="o.user_id.partner_id.telegram" />
                                     </li>
                                 </t>
