@@ -26,6 +26,11 @@ msgid "Code"
 msgstr "Код"
 
 #. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_sale_order__commercial_proposal_name
+msgid "Commercial Proposal Name"
+msgstr "Название КП"
+
+#. module: olte_so_commercial_report
 #: model:ir.actions.report,name:olte_so_commercial_report.action_report_printed_fields
 msgid "Commercial offer (OLTE)"
 msgstr "Коммерческое предложение (OLTE)"
@@ -119,6 +124,17 @@ msgstr "Стандарт защиты"
 #. module: olte_so_commercial_report
 #: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
 msgid "Tel/Viber/WhatsApp: +380503051276"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_res_partner__telegram
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_res_users__telegram
+msgid "Telegram"
+msgstr ""
+
+#. module: olte_so_commercial_report
+#: model_terms:ir.ui.view,arch_db:olte_so_commercial_report.report_printed_fields
+msgid "Telegram: @"
 msgstr ""
 
 #. module: olte_so_commercial_report
