@@ -15,6 +15,9 @@
                         <br />
                         <div style="text-align: center;">
                             <p style="font-weight: bold;font-size: 14px;">КОМЕРЦІЙНА ПРОПОЗИЦІЯ</p>
+                            <p style="font-weight: bold;font-size: 14px;">
+                                <t t-esc="o.commercial_proposal_name" />
+                            </p>
                         </div>
                         <style>
                             .table th {
@@ -53,6 +56,7 @@
                                         </td>
                                         <td>
                                             <img
+                                                t-if="order_line.product_id.product_tmpl_id.image_1920"
                                                 t-att-src="image_data_uri(order_line.product_id.product_tmpl_id.image_1920)"
                                                 class="img-thumbnail"
                                                 width="150"
@@ -67,6 +71,9 @@
                                                         <li class="list-inline-item">
                                                             <span class="badge badge-light border text-body">
                                                                 <t t-esc="attribute.name" />
+                                                                <!--                                                                <svg width="100" height="100">-->
+                                                                <!--                                                                <circle cx="50" cy="50" r="50" fill="attribute.html_color" />-->
+                                                                <!--                                                                </svg>-->
                                                             </span>
                                                         </li>
                                                     </t>
@@ -81,12 +88,28 @@
                             </tbody>
                         </table>
                         <div>
-                            <p>З повагою, Олена Мазура</p>
+                            <p>
+                                З повагою,
+                                <t t-esc="o.user_id.partner_id.firstname" />
+                                <t t-esc="o.user_id.partner_id.lastname" />
+                            </p>
 
                             <ol style="list-style: none;">
-                                <li>Director and Co-founder OL&amp;TE Group LLC</li>
-                                <li>Tel/Viber/WhatsApp: +380503051276</li>
-                                <li>Telegram: @mzrln</li>
+                                <li>
+                                    <t t-esc="o.user_id.employee_id.job_title" />
+                                </li>
+                                <t t-if="o.user_id.partner_id.phone">
+                                    <li>
+                                        Tel/Viber/WhatsApp:
+                                        <t t-esc="o.user_id.partner_id.phone" />
+                                    </li>
+                                </t>
+                                <t t-if="o.user_id.partner_id.telegram">
+                                    <li>
+                                        Telegram: @
+                                        <t t-esc="o.user_id.partner_id.telegram" />
+                                    </li>
+                                </t>
                             </ol>
                         </div>
                     </div>

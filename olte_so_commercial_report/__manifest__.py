@@ -10,6 +10,8 @@
         "views/standard_protection_view.xml",
         "views/product_template.xml",
         "views/product_product.xml",
+        "views/sale_order.xml",
+        "views/res_partner.xml",
         "reports/report.xml",
         "reports/report_printed_fields.xml",
     ],
