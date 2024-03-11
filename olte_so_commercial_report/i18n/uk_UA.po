@@ -26,6 +26,11 @@ msgid "Code"
 msgstr "Код"
 
 #. module: olte_so_commercial_report
+#: model:ir.model.fields,field_description:olte_so_commercial_report.field_sale_order__commercial_proposal_name
+msgid "Commercial Proposal Name"
+msgstr "Назва КП"
+
+#. module: olte_so_commercial_report
 #: model:ir.actions.report,name:olte_so_commercial_report.action_report_printed_fields
 msgid "Commercial offer (OLTE)"
 msgstr "Комерційна пропозиція (OLTE)"
