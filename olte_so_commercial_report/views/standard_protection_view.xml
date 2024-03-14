@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="standard_protection_form" model="ir.ui.view">
+        <field name="name">standard.protection.form</field>
+        <field name="model">standard.protection</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="record_number" />
+                        <field name="name" />
+                        <field name="code" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="standard_protection_tree" model="ir.ui.view">
+        <field name="name">standard.protection.tree</field>
+        <field name="model">standard.protection</field>
+        <field name="arch" type="xml">
+            <tree editable="top">
+                <field name="record_number" />
+                <field name="name" />
+                <field name="code" />
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_standard_protection" model="ir.actions.act_window">
+        <field name="name">Standard for protection</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">standard.protection</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem
+        id="menu_standard_protection"
+        name="Standard for protection"
+        parent="stock.menu_product_in_config_stock"
+        sequence="40"
+        action="action_standard_protection"
+    />
+</odoo>
